@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { MdWavingHand } from "react-icons/md";
 import { images } from "../../constants";
 import AppWrap from "../../wrapper/AppWrap";
+import myself from "../../../public/dist/assets/meInsuitwatch.png"
 
 const scaleVariants = {
   whileInView:{
@@ -34,8 +35,8 @@ const Header = () => {
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Tech Copywriter</p>
+            <p className="p-text">Software engineer</p>
+            <p className="p-text">Techical Writer Enthusiast</p>
           </div>
         </div>
       </motion.div>
@@ -45,7 +46,6 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src="./myimage.png" alt="profile_bg" />
         <motion.img
           whileInView={{ scale: [0,1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -53,6 +53,7 @@ const Header = () => {
           src={images.circle}
           alt="profile_circle"
         />
+          <img src={myself} height={630} alt="profile_bg" />
       </motion.div> 
 
       <motion.div
